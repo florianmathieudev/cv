@@ -1,0 +1,221 @@
+body {
+    background: url(../public/computer-1209641_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-fluid {
+    padding: 0;
+    font-size: 1rem;
+}
+
+.base {
+    padding: 1em 1em 0 1em;
+    background: linear-gradient(180deg, rgba(183,204,255,1) 0%, rgba(255,255,255,1) 100%);
+    background-attachment: fixed;
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+    bottom: 0;
+    box-shadow: 17px 29px 46px 20px rgba(0,0,0,0.75);
+}
+
+.categorie {
+    
+    background-attachment: fixed;
+    width: auto;
+}
+
+#competences, #formation {
+    background: linear-gradient(180deg, rgba(183,204,255,0) 0%, rgba(255,255,255,0) 100%);
+    color: aliceblue;
+    box-shadow: none;
+}
+
+img {
+    width: 20%;
+}
+
+/* wave */
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    background-attachment: fixed;
+    color:white;
+}
+
+.inner-header {
+    height:65vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+  
+.content {
+    position:relative;
+    height:30vh;
+    text-align:center;
+    background-color: white;
+}
+  
+/* Animation */
+  
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+    transform: translate3d(-90px,0,0);
+}
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+    height:40px;
+    min-height:40px;
+    }
+    .content {
+        height:30vh;
+    }
+    h1 {
+        font-size:24px;
+    }
+}
+/* fin wave */
+/* bateau */
+
+.p-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.p-scalane {
+    border-width: 0 40px 120px 40px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.6) transparent;
+}
+.p-scalane--sm {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-width: 0 10px 30px 10px;
+    border-color: transparent transparent #fff transparent;
+}
+.p-equilateral {
+    border-width: 70px 40px 0 40px;
+    border-color: #fff transparent transparent transparent;
+}
+.p-flex {
+    display: flex;
+    justify-content: center;
+}
+.boat {
+    -webkit-animation: sail_away 2s 2s ease-in-out alternate 40;
+            animation: sail_away 2s 2s ease-in-out alternate 40;
+    width: 480px;
+    margin: 10% auto;
+}
+.boat__top {
+    position: relative;
+}
+.boat__top-flagpole {
+    width: 80px;
+    height: 120px;
+    border-left: 2.4px solid #fff;
+    margin-left: -1.2px;
+    position: absolute;
+    top: 1.2px;
+    left: 50%;
+}
+.boat__top-flagpole > .p-scalane--sm {
+    -webkit-animation: flag 2s ease-in forwards;
+            animation: flag 2s ease-in forwards;
+    position: absolute;
+    top: -12px;
+    left: 2.6px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+.boat__bottom > .p-triangle:nth-child(even) {
+    border-top-color: rgba(255, 255, 255, 0.6);
+    margin: -40px;
+    -webkit-transform: rotateX(180deg) translateY(-40px);
+            transform: rotateX(180deg) translateY(-40px);
+}
+@-webkit-keyframes flag {
+    from {
+        top: 100%;
+    }
+    to {
+        top: -12px;
+    }
+}
+  
+@keyframes flag {
+    from {
+    top: 100%;
+    }
+    to {
+    top: -12px;
+    }
+}
+@-webkit-keyframes sail_away {
+    50% {
+        -webkit-transform: rotate(2deg) translate(20px);
+        transform: rotate(2deg) translate(20px);
+    }
+    100% {
+    -webkit-transform: rotate(-3deg) translate(-10px);
+            transform: rotate(-3deg) translate(-10px);
+    }
+}
+@keyframes sail_away {
+    50% {
+    -webkit-transform: rotate(2deg) translate(20px);
+            transform: rotate(2deg) translate(20px);
+    }
+    100% {
+    -webkit-transform: rotate(-3deg) translate(-10px);
+            transform: rotate(-3deg) translate(-10px);
+    }
+}
+
+
+  /* fin bateau */
+
+  
