@@ -2,16 +2,27 @@ body {
     background: url(../public/computer-1209641_1920.jpg);
     background-size: cover;
     background-attachment: fixed;
-    font-size: 1em;
 }
+
+.navbar {
+    font-size: 10px;
+    padding: 0;
+    padding-left: .5em;
+}
+
+
+
 
 .container-fluid {
     padding: 0;
-    font-size: 1rem;
+    
 }
 
+
+
 .base {
-    padding: 1em 1em 0 1em;
+    padding: 3em 1em 0 1em;
+    font-size: 15px;
     background: linear-gradient(180deg, rgba(183,204,255,1) 0%, rgba(255,255,255,1) 100%);
     background-attachment: fixed;
     width: auto;
@@ -22,13 +33,13 @@ body {
 }
 
 .categorie {
-    
+    padding-top: 3em;
     background-attachment: fixed;
     width: auto;
 }
 
 
-#competences, #formation {
+#competences, #formation, #contact {
     background: linear-gradient(180deg, rgba(183,204,255,0) 0%, rgba(255,255,255,0) 100%);
     color: aliceblue;
     box-shadow: none;
@@ -36,11 +47,21 @@ body {
     display: block;
 }
 
-h1, h2, h3, h4, p {
-    font-family: "Dosis", arial, tahoma, verdana;
-    font-weight: 500;
-    padding: 10px;
-    font-size: 1em;
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+p> {
+    font-size: 10px;
 }
 
 
@@ -50,8 +71,15 @@ img {
 
 iframe {
     margin: auto;
-    width: auto;
-    height: auto;
+    display: flex;
+    padding-bottom: 2px;
+}
+
+
+
+footer {
+  background-color: #33678a;
+  color: aliceblue;
 }
 
 /* wave */
@@ -61,6 +89,7 @@ iframe {
     background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
     background-attachment: fixed;
     color:white;
+    padding-top: 5em;
 }
 
 .inner-header {
@@ -131,9 +160,7 @@ iframe {
     .content {
         height:30vh;
     }
-    h1 {
-        font-size:24px;
-    }
+    
 }
 /* fin wave */
 /* bateau */
@@ -270,7 +297,14 @@ a {
   margin: 0 auto;
 }
 
+#ror {
+  font-family: 'Anton', sans-serif;
 
+}
+
+#ddd {
+  width: 20px;
+}
 
 .project-name {
   text-align: center;
@@ -435,8 +469,9 @@ header .social .btn {
 
 #hover{
   background: url(../Public/screenPixel.png);
+  background-position: center;
   background-size: 80vmin;
-  background-position-x: -200px;
+  background-position-y: -2px;
   width:30vmin; height:auto;
   display:block;
   margin:auto;

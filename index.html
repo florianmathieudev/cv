@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    
+    <link rel="stylesheet" href="/css/font-mfizz.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     
+
 </head>
 <body>
 <!-- nav -->
@@ -89,6 +92,7 @@
     <div class="base" id="apropos">
         <div class="container-fluid ">
             <h1 >A propos de moi</h1>
+            
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
@@ -116,11 +120,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
-                        <p>
-                            <span class="span_gras">Certification Maîtrise sur la qualité en projet Web</span><span class="span_bleu"> Opquast</span>/880 points sur 1000, niveau avancé
-                        </p>
-                        <div>
-                            <img id="badge_opquast" src="https://data.oqs-cdn.com/openbadges/issuer_E3V1RJ.svg" alt="badge_certif_opquast">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>
+                                    <span class="span_gras">Certification Maîtrise sur la qualité en projet Web</span><span class="span_bleu"> Opquast</span>/880 points sur 1000, niveau avancé
+                                </p>
+                            </div>
+                                <div class="col-6">
+                                    <img id="badge_opquast" src="https://data.oqs-cdn.com/openbadges/issuer_E3V1RJ.svg" alt="badge_certif_opquast">
+                                </div>
                         </div>
                     </div>
 
@@ -128,84 +136,165 @@
                         <p>
                             <span class="span_gras">Développeur Web et Web Mobile</span><span class="span_bleu"> o'Clock, labellisée Grande Ecole du numérique en Téléprésentiel</span>/d'octobre 2018 à avril 2019
                         </p>
-                        
+                        <p>                        
                             <ul>
                                 <li>700 heures intensives</li>
-                                <p><li>3 mois de socle : HTML5/CSS3/Bootstrap/Javascript/PHP<br>/jQuery/AJAX</li></p>
+                                <p><li>3 mois de socle : HTML5/CSS3/Bootstrap/Javascript/PHP/jQuery/AJAX</li></p>
                                 <li>1 mois de spécialisation : Symfony</li>
                                 <li>1 mois de projet</li>
                             </ul>
+                        </p>
                         <iframe width="auto" height="auto" src="https://www.youtube.com/embed/pK8L0BdnReA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                     </div>
                 </div> 
             </div>
     </div>
-
+<!-- timeline -->
     <div class="base">    
         <div class="categorie" id="experiences">
-<!-- timeline -->
-            <div class="container">
+            <div class="container-fluid">
                 <h1 class="project-name">Expériences</h1>
-                    <div id="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-icon"></div>
-                                <div class="timeline-content">
-                                    <h2><span class="span_gras">Stage découverte Ruby on Rails</span> Alpix<span class="span_bleu"></span>/de juillet à août 2019</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                        Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
-                                    </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-9">
+                                <div id="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                            <div class="timeline-content">
+                                                <h2><span class="span_gras">Stage découverte Ruby on Rails</span> Alpix<span class="span_bleu"></span>/de juillet à août 2019</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                                    Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-content right">
+                                            <h2><span class="span_gras">Développeur Web</span><span class="span_bleu"> o'Clock en Téléprésentiel</span> / de février 2019 à avril 2019</h2>
+                                                <h3>Projet de fin de formation</h3>
+                                                    <p>Pixel Café, site d'un bar fictif. Réalisé en React pour le front et Symfony pour le back</p>
+                                                    <a href="https://youtu.be/eGOq6tIuiMs?t=2332">Présentation youtube du projet</a>
+<!-- hover -->
+                                                <svg id="hover" viewbox="0 0 50 50" width="50" height="50">
+                                                    <defs>
+                                                        <mask id="mask" x="0" y="0" width="100" height="49">
+                                                        <rect x="0.5" y="0.5" width="49" height="49" fill="#fff"/>
+                                                        <text x="15" text-anchor="middle" y="50" dy="0">P</text>
+                                                        <text x="20" text-anchor="middle" y="50" dy="0">I</text>
+                                                        <text x="25" text-anchor="middle" y="50" dy="0">X</text>
+                                                        <text x="30" id="ltrV" text-anchor="middle" y="50" dy="0">E</text>
+                                                        <text x="35" text-anchor="middle" y="50" dy="0">L</text>
+                                                        </mask>
+                                                    </defs>
+                                                    <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#E3DFD2"/>
+                                                </svg>
+                                        </div>
+<!-- fin hover -->
+                                    </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon"></div>
+                                        <div class="timeline-content">
+                                            <h2><span class="span_gras">Développeur Web</span><span class="span_bleu"> o'Clock en Téléprésentiel</span> / d' octobre 2018 à février 2019</h2>                    
+                                                <h3>Projet pendant la formation</h3>
+                                                    <ul>
+                                                        <li><span class="span_bleu">o'News (blog)</span>, PHP/Bootstrap/mySQL</li>
+                                                        <li><span class="span_bleu">o'Quiz</span>, Javascript</li>
+                                                        <li><span class ="span_bleu">o'Shop</span>, Symfony, Bootstrap</li>
+                                                        <li><span class="span_bleu">o'Kanban</span>, jQuery, AJAX, Lumen</li>
+                                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-icon"></div>
-                                <div class="timeline-content right">
-                                    <h2><span class="span_gras">Développeur Web</span><span class="span_bleu"> o'Clock en Téléprésentiel</span> / de février 2019 à avril 2019</h2>
-                                        <h3>Projet de fin de formation</h3>
-                                            <p>Pixel Café, site d'un bar fictif. Réalisé en React pour le front et Symfony pour le back</p>
-                                            <a href="https://youtu.be/eGOq6tIuiMs?t=2332">Présentation youtube du projet</a>
-        <!-- hover -->
-                                        <svg id="hover" viewbox="0 0 50 50" width="50" height="50">
-                                            <defs>
-                                                <mask id="mask" x="0" y="0" width="100" height="49">
-                                                <rect x="0.5" y="0.5" width="49" height="49" fill="#fff"/>
-                                                <text x="15" text-anchor="middle" y="50" dy="0">P</text>
-                                                <text x="20" text-anchor="middle" y="50" dy="0">I</text>
-                                                <text x="25" text-anchor="middle" y="50" dy="0">X</text>
-                                                <text x="30" id="ltrV" text-anchor="middle" y="50" dy="0">E</text>
-                                                <text x="35" text-anchor="middle" y="50" dy="0">L</text>
-                                                </mask>
-                                            </defs>
-                                            <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#E3DFD2"/>
-                                        </svg>
-                                </div>
-            <!-- fin hover -->
-                                    
-    
                             </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon"></div>
-                                <div class="timeline-content">
-                                    <h2><span class="span_gras">Développeur Web</span><span class="span_bleu"> o'Clock en Téléprésentiel</span> / d' octobre 2018 à février 2019</h2>
-                                        
-                                        <h3>Projet pendant la formation</h3>
-                                            <ul>
-                                                <li><span class="span_bleu">o'News (blog)</span>, PHP/Bootstrap/mySQL</li>
-                                                <li><span class="span_bleu">o'Quiz</span>, Javascript</li>
-                                                <li><span class ="span_bleu">o'Shop</span>, Symfony, Bootstrap</li>
-                                                <li><span class="span_bleu">o'Kanban</span>, jQuery, AJAX, Lumen</li>
-                                            </ul>
-                                </div>
-                            </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h2>En cours</h2>
+                                        <h3>Facebook perso</h3>
+                                        <h3>Site vitrine pour un ami menuisier</h3>
+                                </div>                            
                         </div>
+                        
+                                
+                    </div>
+            </div>
+        </div>
+    </div>           
+    <!-- fin timline -->
+    <div class="categorie" id="competences">
+            <h1>Compétences</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                <span style="font-size: 20px; color: aliceblue;">
+                                    <i class="fab fa-php"></i>
+                                    <i class="fab fa-symfony"></i>
+                                </span>
+                                <span class="span_bleu"> Intermédiaire</span>
+                            </p>
+                        </div>
+                        <div class="col">   
+                            <p>
+                                <span style="font-size: 20px; color: aliceblue;">
+                                    <i class="fab fa-js"></i>
+                                </span>
+                                <span class="span_bleu"> Intermédiaire</span>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <span style="font-size: 20px; color: aliceblue;">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                </span>
+                                <span class="span_bleu"> Confirmé</span>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <span style="font-size: 20px; color: aliceblue;">
+                                    <i class="fab fa-bootstrap"></i>
+                                </span>
+                                <span class="span_bleu"> Confirmé</span>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p >
+                                <span id="ror">RoR</span>
+                                <span class="span_bleu"> Débutant</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="base">
+            <div class="categorie" id="loisirs">
+                <div class="container">
+                    <h1>Loisirs</h1>
+                        <img id="ddd" src="/public/impression3D.jpg" alt="">
                 </div>
             </div>
-        </div>          
-    <!-- fin timline -->
+        </div>
+            <div class="categorie" id="contact">
+                <h1>Contact</h1>
+                    <div>
+    
+                    </div>
+            </div>
+        
+        <footer class="">
+            <p>all right reserved</p>
+        </footer>
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/db01835c39.js" crossorigin="anonymous"></script>  
 </body>
 </html>
