@@ -574,3 +574,72 @@ svg:hover text{
 }
 /* finhover */
 
+/* js */
+
+[class*="revealV-"] {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.revealV-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+
+}
+
+.revealV-1 {
+  transition-delay: 0;
+}
+
+.revealV-2 {
+  transition-delay: .1s;
+}
+
+.revealV-3 {
+  transition-delay: .2s;
+}
+
+.revealV-4 {
+  transition-delay: .3s;
+}
+
+.revealV-5 {
+  transition-delay: .4s;
+}
+
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(-70px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-H {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.reveal-visible-H {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+
+.reveal-H-R {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.reveal-visible-H-R {
+  opacity: 1;
+  transform: translateX(-50px);
+  transition: 1s cubic-bezier(.5, 0, 0, 1);
+}
+/* fin js */
