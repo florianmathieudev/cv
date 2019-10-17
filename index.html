@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/tlcss.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     
 
@@ -51,7 +53,7 @@
 <!-- wave -->
 <div class="container-fluid" id="wave">
         <div class="header">
-            <div class="inner-header flex container-fluid">
+            <div class="inner-header flex container">
                 <div class="boat reveal">
                     <div class="boat__top p-flex">
                         <div class="boat__top-flagpole">
@@ -89,18 +91,18 @@
             </div>
     </div>
 <!-- fin wave -->
-    <div class="base reveal" id="apropos">
+    <div class="base" id="apropos">
         <h1 >A propos de moi</h1>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-6  revealV-3">
                         <h2>Parcours</h2>
                             <p>
                                 Après 15 années à la Poste dans l'Aube et en Gironde, une reconversion professionnelle devenait précente<br>
                                 Issue de la promotion Nova de l'école o'Clock, un établissement au format téléprésentiel (classes virtuelles) qui forme au Développement Web, j'ai réalisé 400h intensives sur les langages HTML,CSS, PHP et JavaScript. Ainsi que 300h de spécialisation Symfony dont un mois de projet FullStack en équipe afin d'être confronté à des problématiques réelles.
                             </p>
                     </div>
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-6  revealV-1">
                         <h2>Objectifs</h2>
                             <div class="">
                                 <p>
@@ -124,14 +126,14 @@
                                 </p>
                             </div>
                                 <div class="col-6">
-                                    <img id="badge_opquast" src="https://data.oqs-cdn.com/openbadges/issuer_E3V1RJ.svg" alt="badge_certif_opquast">
+                                    <a href="https://www.opquast.com/"><img class="reveal-H" id="badge_opquast" src="https://data.oqs-cdn.com/openbadges/issuer_E3V1RJ.svg" alt="badge_certif_opquast"></a>
                                 </div>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-6">
                         <p>
-                            <span class="span_gras">Développeur Web et Web Mobile</span><span class="span_bleu"> o'Clock, labellisée Grande Ecole du numérique en Téléprésentiel</span>/d'octobre 2018 à avril 2019
+                            <span class="span_gras">Développeur Web et Web Mobile</span> <a href="https://oclock.io/"><span class="span_bleu"> o'Clock, labellisée Grande Ecole du numérique en Téléprésentiel</span></a>/d'octobre 2018 à avril 2019
                         </p>
                         <p>                        
                             <ul>
@@ -141,96 +143,97 @@
                                 <li>1 mois de projet</li>
                             </ul>
                         </p>
-                        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/pK8L0BdnReA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="reveal-H-R" width="auto" height="auto" src="https://www.youtube.com/embed/pK8L0BdnReA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                     </div>
                 </div> 
             </div>
     </div>
 <!-- timeline -->
-    <div class="base" id="experiences">
-        <h1 class="project-name">Expériences</h1>
-            <div class="container">                
-                <div class="row">
-                    <div class="col-sm-12 col-md-9 reveal-H">
-                        <div id="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-icon"></div>
-                                    <div class="timeline-content">
-                                        <h2>
-                                            <span class="span_gras">Stage découverte Ruby on Rails</span>
-                                            <span class="span_bleu">Alpix</span>/de juillet à août 2019
-                                        </h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                            Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
-                                        </p>
-                                    </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-icon"></div>
-                                <div class="timeline-content right">
-                                    <h2>
-                                        <span class="span_gras">Développeur Web</span>
-                                        <span class="span_bleu"> o'Clock en Téléprésentiel</span> / de février 2019 à avril 2019
-                                    </h2>
-                                        <h3>Projet de fin de formation</h3>
-                                            <p>Pixel Café, site d'un bar fictif. Réalisé en React pour le front et Symfony pour le back</p>
-                                            <a href="https://youtu.be/eGOq6tIuiMs?t=2332">Présentation youtube du projet</a>
-<!-- hover -->
-                                        <svg id="hover" viewbox="0 0 50 50" width="50" height="50">
-                                            <defs>
-                                                <mask id="mask" x="0" y="0" width="100" height="49">
-                                                <rect x="0.5" y="0.5" width="49" height="49" fill="#fff"/>
-                                                <text x="15" text-anchor="middle" y="50" dy="0">P</text>
-                                                <text x="20" text-anchor="middle" y="50" dy="0">I</text>
-                                                <text x="25" text-anchor="middle" y="50" dy="0">X</text>
-                                                <text x="30" id="ltrV" text-anchor="middle" y="50" dy="0">E</text>
-                                                <text x="35" text-anchor="middle" y="50" dy="0">L</text>
-                                                </mask>
-                                            </defs>
-                                            <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#E3DFD2"/>
-                                        </svg>
-                                </div>
-                            </div>
-<!-- fin hover -->
-                                
-                            <div class="timeline-item">
-                                <div class="timeline-icon"></div>
-                                    <div class="timeline-content">
-                                        <h2>
-                                            <span class="span_gras">Développeur Web</span><span class="span_bleu"> o'Clock en Téléprésentiel</span> / d' octobre 2018 à février 2019
-                                        </h2>                    
-                                            <h3>Projet pendant la formation</h3>
-                                                <ul>
-                                                    <li><span class="span_bleu">o'News (blog)</span>, PHP/Bootstrap/mySQL</li>
-                                                    <li><span class="span_bleu">o'Quiz</span>, Javascript</li>
-                                                    <li><span class ="span_bleu">o'Shop</span>, Symfony, Bootstrap</li>
-                                                    <li><span class="span_bleu">o'Kanban</span>, jQuery, AJAX, Lumen</li>
-                                                </ul>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col-sm-12 col-md-3 reveal-H-R" id="encours">
+
+    <section id="timeline">
+        <div class="container-fluid">
+            <div class="row" id="tl">  
+                <div class="tl-item col-12 col-lg-3">          
+                <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>          
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">Octobre 2018 - février 2019</p>
+                </div>
+        
+                <div class="tl-content">
+                    <h1>Développeur Web o'Clock en téléprésentiel</h1>
+                        <div>
+                            <p>Projet pendant la formation</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+
+
+                        </div>
+                </div>
+        
+            </div>
+        
+            <div class="tl-item col-12 col-lg-3">
+            
+                <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+            
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">Février 2019-avril 2019</p>
+                </div>
+        
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+                        <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+                </div>
+        
+            </div>
+        
+            <div class="tl-item col-12 col-lg-3">
+            
+                <div class="tl-bg" style="background-image: url(../)"></div>
+            
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">2014</p>
+                </div>
+        
+                <div class="tl-content">
+                    <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+                        <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+                </div>
+        
+            </div>
+        
+            
+            <div class="tl-item col-12 col-lg-3">
+            
+                <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+                
+                <div class="tl-year">
+                    <p class="f2 heading--sanSerif">
                         <div class="load">
                             <div class="spin"></div>
                             <div class="loading">En cours</div>
                         </div>
-                        <div id="white">
-                            <h3>Facebook perso</h3>
-                            <h3>Site vitrine pour un ami menuisier</h3>
-                        </div>
-                    </div>
+                    </p>
+                </div>
+            
+                <div class="tl-content">
+                    <h1>Lorem ipsum dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                 </div>
             </div>
-    </div>           
+    
+    
+</div>
+</div>
+</section>
     <!-- fin timline -->
     <div class="categorie" id="competences">
             <h1>Compétences</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
+                <div class="container-fluid">
+                    <div class="row ico">
+                        <div class="col-sm-6 col-md-2">
                             
                                 <span style="font-size: 20px; color: aliceblue;">
                                     <i class="fab fa-php"></i> /
@@ -239,7 +242,7 @@
                                 <span > Intermédiaire</span>
                             
                         </div>
-                        <div class="col-sm-6 col-md-4">   
+                        <div class="col-sm-6 col-md-2">   
                             
                                 <span style="font-size: 20px; color: aliceblue;">
                                     <i class="fab fa-js"></i>
@@ -247,7 +250,7 @@
                                 <span > Intermédiaire</span>
                             
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-2">
                             
                                 <span style="font-size: 20px; color: aliceblue;">
                                     <i class="fab fa-html5"></i> /
@@ -256,7 +259,7 @@
                                 <span > Confirmé</span>
                             
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-2">
                             
                                 <span style="font-size: 20px; color: aliceblue;">
                                     <i class="fab fa-bootstrap"></i>
@@ -264,13 +267,13 @@
                                 <span > Confirmé</span>
                             
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-2">
                             
                                 <span id="ror">RoR</span>
                                 <span > Débutant</span>
                             
                         </div>
-                        <div class="col-sm-6 col-md-4">
+                        <div class="col-sm-6 col-md-2">
                             
                                 <span style="font-size: 20px; color: aliceblue;">
                                     <i class="fab fa-git"></i>
@@ -283,8 +286,8 @@
         </div>
         <div class="base" id="loisirs">
             <h1>Loisirs</h1>
-                <div class="container">   
-                    <div class="row">
+                <div class="container-fluid">   
+                    <div class="row ico" >
                         <div class="col-12 col-md-2 revealV-1">
                             <img src="/CV2/public/scanner.svg" height="40px" width="40px" alt="">
                             <p>
@@ -320,8 +323,8 @@
         </div>
             <div class="categorie"  id="contact">
                 <h1>Contact</h1>
-                    <div class="container">
-                        <div class="row">
+                    <div class="container-fluid">
+                        <div class="row ico">
                             <div class="col-6 col-xl-2">
                                 <span style="font-size: 20px; color: aliceblue;"></span>
                                     <a class="button" href="https://www.linkedin.com/in/florian-mathieu-devweb/"><i class="fab fa-linkedin"></i> linkedIN</a>

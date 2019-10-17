@@ -1,4 +1,4 @@
-const ratio = .3
+const ratio = .5
 const ratioHR = .1
 const options = {
     root: null,
